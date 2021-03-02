@@ -1,0 +1,849 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section.about,
+section.offer,
+section.wedding {
+  padding: 4rem;
+}
+
+section.about,
+section.offer,
+section.wedding,
+section.reviews,
+section.slider,
+section.contact {
+  scroll-margin-top: 78px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: url("./images/bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 1.3rem;
+}
+
+li {
+  margin-right: 30px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 2px solid transparent;
+}
+
+ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.logo {
+  padding-left: 2rem;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Lobster Two", sans-serif;
+}
+
+.logo span {
+  font-size: 3rem;
+  font-family: "Lobster Two", sans-serif;
+  color: #ffe0bb;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.sticky {
+  background: #fff;
+  padding: 1.2rem 0rem 1.2rem;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+}
+
+.navigation.sticky .burger {
+  color: #d56f18;
+}
+
+.navigation.sticky ul {
+  margin-top: 0.9rem;
+}
+
+.navigation.sticky ul li a {
+  color: #000;
+}
+
+.navigation.sticky .logo {
+  color: #d56f18;
+}
+
+.navigation.sticky .logo i {
+  color: #ffe0bb;
+}
+
+.navigation.sticky .logo span {
+  color: #d56f18;
+  font-size: 2rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.main-title {
+  color: #fff;
+  font-size: 70px;
+  font-weight: inherit;
+}
+
+.title h3 {
+  color: #fff;
+  font-family: "Lobster Two", sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: end;
+}
+
+.header-button {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  margin: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* hamburger manu */
+
+.burger {
+  display: none;
+}
+
+/* about section */
+
+.about-container,
+.wedding-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-info,
+.wedding-info {
+  position: relative;
+  width: 42%;
+}
+
+.about-box,
+.wedding-box {
+  position: relative;
+  width: 47%;
+}
+
+.about-img,
+.wedding-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-img img,
+.wedding-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-info h1,
+.wedding-info h1 {
+  font-size: 2.3rem;
+  color: #ffa151;
+  font-family: "Lobster Two";
+}
+
+.about-info p,
+.wedding-info p {
+  margin: 3rem 1rem 1rem 0rem;
+  line-height: 1.6rem;
+}
+
+.wedding-info a {
+  color: #000;
+}
+
+/* offer */
+
+.offer-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.offer-title p {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.offer-title h1 {
+  font-size: 2.3rem;
+  color: #ffa151;
+  font-family: "Lobster Two";
+}
+
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.offer-box {
+  margin: 20px;
+}
+
+.offer-box img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer-box:hover {
+  background-color: #fcf8f4;
+}
+
+.offer-box h1 {
+  color: #ffa151;
+}
+
+.offer-box a {
+  text-decoration: none;
+  color: #000;
+  font-weight: lighter;
+}
+
+.offer-box h3 {
+  text-decoration: none;
+  color: #000;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+/* review section */
+
+.reviews {
+  background: url(./images/reviews-bg.jpg) center no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.img-box {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviews-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.reviews-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  top: 0;
+  opacity: 0.7;
+}
+
+.review-box {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 250px;
+  margin: 20px;
+  padding: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review-box h1 {
+  font-size: 1.1rem;
+}
+
+.review-box p {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.review-rating {
+  padding-top: 1rem;
+}
+
+.review-rating .fa-star {
+  color: #ffa151;
+}
+
+.reviews-box-details {
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.review-description {
+  margin-top: 1rem;
+}
+
+.reviews-box-details {
+  padding: 2rem 0rem 2rem;
+}
+
+.reviews-box-details h1 {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.reviews-box-details a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wedding-box {
+  padding: 1rem;
+}
+
+.slider-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0rem 4rem;
+}
+
+.glide__slide img {
+  width: 100%;
+}
+
+/* contact */
+
+section.contact {
+  padding: 4rem 4rem 0rem 4rem;
+}
+
+.contact-heading {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6rem;
+}
+
+.contact-heading h1 {
+  font-size: 2.3rem;
+  color: #ffa151;
+  font-family: "Lobster Two";
+}
+
+.contact-img {
+  height: 100%;
+  max-width: 600px;
+}
+
+.contact-img img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("img/bg.jpg") no-repeat center;
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1;
+}
+.contact-box {
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.05);
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+.right h2 {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #8b5a47;
+}
+
+.right h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #d56f18;
+}
+
+.field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+  resize: none;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.contact-btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #ffb157;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #eca34e;
+}
+
+.field:focus {
+  border: 2px solid rgba(174, 183, 209, 0.47);
+  background-color: #fff;
+}
+
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #56514d;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.footer-right {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-right h1 {
+  font-family: "Lobster Two", sans-serif;
+  color: #fff;
+}
+
+.footer-left {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left p {
+  margin-right: 1rem;
+  color: white;
+}
+
+.contact-logo {
+  padding-left: 0;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-logo span {
+  color: #e8ad67;
+  display: contents;
+}
+
+.contact-logo .fa-sun {
+  margin-top: 8px;
+}
+
+.social-media {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media .sm-link .fab {
+  color: white;
+}
+
+.sm-link {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  display: flex;
+  margin-right: 1rem;
+  transition: color 0.5s;
+}
+
+.sm-link .fab:hover {
+  color: #ee9a6a;
+}
+
+.sm-link i {
+  margin: auto;
+}
+
+/* media queries */
+
+@media screen and (max-width: 441px) {
+  .logo {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+  }
+
+  .footer-left p {
+    font-size: 0.7rem;
+  }
+
+  .footer-right h1 {
+    font-size: 1.4rem;
+  }
+
+  .sm-link {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .about-info,
+  .about-box {
+    position: relative;
+    width: 100%;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .about-img {
+    height: 20rem;
+    margin-top: 2.2rem;
+  }
+
+  .header-button {
+    padding: 0.7rem;
+  }
+
+  .header-button a {
+    padding: 0.7rem;
+  }
+
+  .main-title {
+    font-size: 3rem;
+    padding: 0.8rem 0rem 0.8rem;
+  }
+
+  .title h3 {
+    font-size: 1.5rem;
+    padding-right: 3.8rem;
+  }
+
+  .reviews-title h1 {
+    padding-bottom: 1rem;
+  }
+
+  .wedding-box {
+    padding: none;
+  }
+
+  .about-info h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 0;
+    background-color: #fcebdc;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    margin-top: 0;
+    transition: transform 0.5s ease;
+  }
+
+  .navigation.sticky ul {
+    margin-top: 0;
+  }
+
+  .nav-links li {
+    padding: 2rem;
+    opacity: 0;
+  }
+
+  .nav-links a {
+    color: #b45b26;
+    font-weight: bold;
+    transition: none;
+  }
+
+  .navigation.sticky ul li a {
+    color: #b45b26;
+  }
+
+  .burger {
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+    color: white;
+    margin: 15px 25px 0px;
+  }
+
+  .burger .fas {
+    font-size: 28px;
+  }
+
+  .burger .fa-times {
+    display: none;
+  }
+
+  .active .burger .fa-times {
+    display: block;
+    color: #dc8b5b;
+  }
+
+  .active .burger .fa-bars {
+    display: none;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .sticky {
+    padding: 1.2rem 0rem 1.2rem;
+    height: 60px;
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  ul li.active a {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .wedding-info,
+  .wedding-box {
+    position: relative;
+    width: 100%;
+  }
+
+  .wedding-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wedding-info h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wedding-img {
+    height: 20rem;
+    margin-top: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .title div {
+    font-size: 1rem;
+  }
+
+  .header-button {
+    padding: 1rem;
+  }
+
+  .button {
+    padding: 5px 15px;
+  }
+
+  .button a {
+    font-size: 1rem;
+  }
+}
